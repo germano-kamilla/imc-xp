@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora IMC | XP Educação</title>
+    <!-- CSS FILE -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- FAVICON -->
+    <link rel="icon" type="image/x-icon" href="assets/images/imc-icon.ico" />
+  </head>
+  <body>
+    <container>
+      <section class="imc-container">
+        <img src="assets/images/imc-faixas.webp" />
+        <div class="imc-container-content">
+          <h1>Calcule seu IMC</h1>
+
+          <label for="input-weight">Informe o seu peso (kg):</label>
+          <input id="input-weight" type="number" step="0.1" />
+
+          <label for="input-height">Informe a sua altura (m):</label>
+          <input id="input-height" type="number" step="0.01" />
+
+          <button onclick="calcimc()">Calcular IMC</button>
+          <p id="imc-result"><br /></p>
+          <p id="classification-result"></p>
+        </div>
+      </section>
+    </container>
+
+    <!-- SCRIPT FILE -->
+    <script defer src="assets/js/script.js"></script>
+  </body>
+</html>
